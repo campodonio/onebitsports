@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+/* HEADER */
+
+.header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+}
+
+.logo-onebitcode {
+    width: 170px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonHeader {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 10px;
+    padding: 8px 5px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonHeader:hover {
+    border-bottom: 2px solid #fc0042;
+}
+
+/* TITULO INICIAL DA PÁGINA */
+#title-page {
+    text-align: center;
+    padding: 30px;
+}
+
+#title {
+    color: #fc0042;
+    font-family: 'Michroma', sans-serif;
+    font-size: 23px;
+}
+#subtitle {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* CONFIGS PRINCIPAIS DO MENU PRINCIPAL */
+#main-container {
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*ITENS DO LADO ESQUERDA */
+#left-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.item {
+    width: 240px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.item:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.img-items {
+    height: 150px;
+    width: 218px;
+    border-radius: 10px;
+}
+
+/*ITENS DA DIREITA*/
+
+#right-container {
+    padding: 30px;
+    color: white;
+    background-color: firebrick;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    border-radius: 10px;
+}
+
+.rightImg {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.right-items, #rightTitle {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: grey;
+    box-shadow: 8px 5px 5px black;
+} 
+
+.right-items {
+    cursor: pointer;
+}
+
+.right-items:hover {
+    filter: brightness(80%);
+}
+
+/* FINAL DA PÁGINA */
+
+.footer {
+    margin-top: 100px;
+    padding: 0px 20px;
+    height: 80px;
+    background-color: black;
+    display: flex;   
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.footer a {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    border-bottom: 2px solid #fc0042;   
+}
+
+.footerItem {
+    margin: 8px;
+}
+
+
+@media (max-width: 709px){
+    #left-container {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 452px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer {
+        display: flex;   
+        flex-direction: row;
+        justify-content: center;
+    }
+}
